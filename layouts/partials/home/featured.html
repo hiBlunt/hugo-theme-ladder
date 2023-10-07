@@ -6,7 +6,7 @@
   {{ range $featured }}
     <article class="featured-single">
         <h4><a href="{{ .RelPermalink }}">{{ .Params.title }}</a></h4>
-        {{ partial "blog/meta.html" . }}
+        {{ partial "posts/meta.html" . }}
         {{ .Summary }}
     </article>
   {{ end -}}

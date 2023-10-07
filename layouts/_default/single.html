@@ -4,10 +4,10 @@
     <h1>{{ .Title }}</h1>
   </header>
 
-  {{ partial "blog/meta.html" . }}
+  {{ partial "posts/meta.html" . }}
 
   <div class="blog-toc">
-    {{ partial "blog/toc.html" . }}
+    {{ partial "posts/toc.html" . }}
   </div>
 
   <section class="blog-content">{{ .Content }}</section>
@@ -32,6 +32,6 @@
   </div>
   {{ end }}
 
-  {{ partial "blog/series.html" . }}
+  {{ partial "posts/series.html" . }}
 </article>
 {{ end }}

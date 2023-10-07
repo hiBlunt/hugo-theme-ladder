@@ -22,7 +22,7 @@
           {{- .Title | markdownify }}
         </h3>
         <div class="archive-meta">
-          {{ partial "blog/meta.html" . }}
+          {{ partial "posts/meta.html" . }}
         </div>
         <a class="archive-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
       </div>
